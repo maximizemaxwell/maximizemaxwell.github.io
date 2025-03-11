@@ -1,0 +1,81 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Eunsoo Eun
+title: Undergraduate Student
+email: ewhk9887@gmail.com
+website: https://maximizemaxwell.com
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username: maximizemaxwell
+linkedin_username: ewhk9887
+orcid_username: 0009-0008-0409-9235
+
+# Additional icon links
+additional_links:
+- title: Hugging Face
+  icon: fab fa-huggingface
+  url: https://huggingface.co/ewhk9887
+
+# About Section
+about_profile_image: images/profile.jpg
+about_content: | 
+  I am an enthusiastic undergraduate student at Hankuk University of Foreign Studies, pursuing a dual major in International Economics and Law & AI-Software with a GPA of 3.55. I have a strong passion for cybersecurity research and innovative solutions in threat detection and secure system design. With hands-on experience in Linux, Python, C, C++, and ongoing studies in Rust, I am eager to contribute my skills and knowledge to a dynamic security lab environment.
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Hankuk University of Foreign Studies
+        caption: 2023 - 2027
+        sub_title: International Economics and Law & AI-Software
+        quote: >
+          Undergraduate Student with a GPA of 3.55
+        description: |
+          Currently pursuing a dual major in International Economics and Law & AI-Software. I have maintained a GPA of 3.55 while actively participating in research projects and hackathons.
+
+  - title: Technical Skills
+    layout: list
+    content:
+      - layout: left
+        title: Languages
+        description: |
+          Python, C, C++, Rust (in progress)
+      - layout: left
+        title: Knowledge
+        description: |
+          Linux, Machine Learning (ML), Deep Learning (DL)
+
+  - title: Open Source Contributions
+    layout: list
+    content:
+      - layout: left
+        title: Ubuntu Korean Translators
+        description: |
+          Contributed to the localization efforts for Ubuntu, enhancing accessibility and usability for Korean users.
+      - layout: left
+        title: Hugging Face Transformers Documentation
+        description: |
+          Assisted in translating documentation for Hugging Face Transformers, supporting the open-source community.
+
+ 
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

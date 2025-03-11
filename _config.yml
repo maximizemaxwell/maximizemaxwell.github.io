@@ -22,7 +22,7 @@ orcid_username: 0009-0008-0409-9235
 # Additional icon links
 additional_links:
 - title: Hugging Face
-  icon: fab fa-huggingface
+  icon: 🤗
   url: https://huggingface.co/ewhk9887
 
 # About Section
@@ -30,6 +30,8 @@ about_profile_image: images/profile.png
 about_content: | 
   I am an enthusiastic undergraduate student at Hankuk University of Foreign Studies, pursuing a dual major in International Economics and Law & AI-Software with a GPA of 3.55. I have a strong passion for cybersecurity research and innovative solutions in threat detection and secure system design. With hands-on experience in Linux, Python, C, C++, and ongoing studies in Rust, I am eager to contribute my skills and knowledge to a dynamic security lab environment.
 
+# Content Sections
+content:
   - title: Education
     layout: list
     content:
@@ -66,7 +68,6 @@ about_content: |
         description: |
           Assisted in translating documentation for Hugging Face Transformers, supporting the open-source community.
 
- 
 # Footer
 footer_show_references: true
 

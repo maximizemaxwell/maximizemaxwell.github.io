@@ -22,7 +22,7 @@ orcid_username: 0009-0008-0409-9235
 # Additional icon links
 additional_links:
 - title: Hugging Face
-  icon: images/hf-logo.png
+  icon: <i class="fa-solid fa-face-smiling-hands"></i>
   url: https://huggingface.co/ewhk9887
 
 # About Section

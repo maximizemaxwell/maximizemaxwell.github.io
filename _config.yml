@@ -68,6 +68,18 @@ content:
         description: |
           Assisted in translating documentation for Hugging Face Transformers, supporting the open-source community.
 
+  - title: Community/Projects
+    layout: list
+    content:
+      - layout: left
+        title: vim.kr moderator
+        description: |
+          Contributing as a moderator in vim.kr, the Korean Vim user community, since 2024/11. 
+      - layout: left
+        title: Pseudo Lab Hugging Face First PR team member
+        description: |
+          Collaborating with team members on code reviews and contribution on huggingface libraries including transformer, since 2025/3.
+
 # Footer
 footer_show_references: true
 

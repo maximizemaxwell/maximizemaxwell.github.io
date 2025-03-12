@@ -72,13 +72,25 @@ content:
     layout: list
     content:
       - layout: left
-        title: vim.kr moderator
+        title: vim.kr 
         description: |
           Contributing as a moderator in vim.kr, the Korean Vim user community, since 2024/11. 
       - layout: left
-        title: Pseudo Lab Hugging Face First PR team member
+        title: Pseudo Lab Hugging Face First PR team 
         description: |
           Collaborating with team members on code reviews and contribution on huggingface libraries including transformer, since 2025/3.
+
+  - title: More infos...
+    layout: list
+    content:
+      - layout: left
+        title: Personality
+        description: |
+          I enjoy learning new technologies and often take on experimental challenges. Rather than focusing on commercial projects, I am more interested in open-source initiatives and contributing to technological advancements, even if they are not immediately applicable for commercialization. I find it fascinating to integrate multiple fields rather than focusing on just one. For example, I’m particularly interested in applying AI across various domains and developing AI agents tailored to those specific fields.
+      - layout: left
+        title: Interests
+        description: |
+          Interested in various linux distributions and kernel sources. I use Arch btw...(Actually some are EndeavourOS for real)
 
 # Footer
 footer_show_references: true

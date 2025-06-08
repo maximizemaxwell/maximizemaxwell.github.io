@@ -21,13 +21,13 @@ orcid_username: 0009-0008-0409-9235
 
 # Additional icon links
 additional_links:
-- title: Hugging Face
-  icon: fas fa-globe
-  url: https://huggingface.co/ewhk9887
+  - title: Hugging Face
+    icon: fas fa-globe
+    url: https://huggingface.co/ewhk9887
 
 # About Section
 about_profile_image: images/profile.png
-about_content: | 
+about_content: |
   I am an enthusiastic undergraduate student at Hankuk University of Foreign Studies, pursuing a dual major in International Economics and Law & AI-Software with a GPA of 3.55. I have a strong passion for cybersecurity research and innovative solutions in threat detection and secure system design. With hands-on experience in Linux, Python, C, C++, and ongoing studies in Rust, I am eager to contribute my skills and knowledge to a dynamic security lab environment.
 
 # Content Sections
@@ -50,7 +50,7 @@ content:
       - layout: left
         title: Languages
         description: |
-          Python, C, C++, Rust (in progress)
+          Python, C, C++, Rust, GO(a bit)
       - layout: left
         title: Knowledge
         description: |
@@ -64,21 +64,21 @@ content:
         description: |
           Contributed to the localization efforts for Ubuntu, enhancing accessibility and usability for Korean users.
       - layout: left
-        title: Hugging Face Transformers Documentation
+        title: Hugging Face contributions
         description: |
-          Assisted in translating documentation for Hugging Face Transformers, supporting the open-source community.
+          Transformers, candle, huggingface_hub
+      - layout: left
+        title: Qiskit
+        description: |
+          Made C Api for unitary gate.
 
   - title: Community/Projects
     layout: list
     content:
       - layout: left
-        title: vim.kr 
+        title: vim.kr
         description: |
-          Contributing as a moderator in vim.kr, the Korean Vim user community, since 2024/11. 
-      - layout: left
-        title: Pseudo Lab Hugging Face First PR team 
-        description: |
-          Collaborating with team members on code reviews and contribution on huggingface libraries including transformer, since 2025/3.
+          Contributing as a moderator in vim.kr, the Korean Vim user community, since 2024/11.
 
   - title: More infos...
     layout: list
@@ -103,4 +103,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag

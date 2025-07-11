@@ -1,0 +1,56 @@
+---
+interface Props {
+  name: string;
+  title: string;
+  email: string;
+  github?: string;
+  linkedin?: string;
+  orcid?: string;
+  huggingface?: string;
+  showImage?: boolean;
+}
+
+const { name, title, email, github, linkedin, orcid, huggingface, showImage = true } = Astro.props;
+---
+
+<div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+  <div class="flex items-center gap-8">
+    {showImage && (
+      <img 
+        src="/images/profile.png" 
+        alt={name}
+        class="w-32 h-32 rounded-full object-cover shadow-md"
+      />
+    )}
+    <div class="flex-1">
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">{name}</h1>
+      <p class="text-xl text-gray-600 mb-4">{title}</p>
+      <div class="flex items-center gap-6 text-gray-700">
+        <a href={`mailto:${email}`} class="hover:text-blue-600 transition-colors">
+          {email}
+        </a>
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+            GitHub
+          </a>
+        )}
+        {linkedin && (
+          <a href={linkedin} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+            LinkedIn
+          </a>
+        )}
+        {orcid && (
+          <a href={orcid} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+            ORCID
+          </a>
+        )}
+        {huggingface && (
+          <a href={huggingface} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors flex items-center gap-2">
+            <img src="/images/hf-logo.png" alt="Hugging Face" class="w-5 h-5" />
+            Hugging Face
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</div>

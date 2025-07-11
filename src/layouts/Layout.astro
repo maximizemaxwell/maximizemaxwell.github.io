@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Eunsoo Eun's CV" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <a href="/cv/" class="text-xl font-bold hover:text-blue-400 transition-colors">Eunsoo Eun</a>
+        <div class="flex gap-6">
+          <a href="/cv/" class="hover:text-blue-400 transition-colors">Main</a>
+          <a href="/cv/ai" class="hover:text-blue-400 transition-colors">AI</a>
+          <a href="/cv/security" class="hover:text-blue-400 transition-colors">Security</a>
+          <a href="/cv/quantum" class="hover:text-blue-400 transition-colors">Quantum</a>
+          <a href="/cv/devops" class="hover:text-blue-400 transition-colors">DevOps</a>
+        </div>
+      </div>
+    </nav>
+    <main class="min-h-screen bg-gray-50">
+      <slot />
+    </main>
+    <footer class="bg-gray-900 text-white p-6 mt-12">
+      <div class="max-w-6xl mx-auto text-center">
+        <p>&copy; 2024 Eunsoo Eun. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>

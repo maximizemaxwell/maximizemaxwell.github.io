@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProfileHeader from '../components/ProfileHeader.astro';
+---
+
+<Layout title="Eunsoo Eun - CV">
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <ProfileHeader
+      name="Eunsoo Eun"
+      title="Undergraduate Student, Hankuk University of Foreign Studies"
+      email="ewhk9887@gmail.com"
+      github="https://github.com/maximizemaxwell"
+      linkedin="https://www.linkedin.com/in/eunsoo-eun"
+      orcid="https://orcid.org/0009-0009-3534-8301"
+      blog="https://maximizemaxwell.com"
+      huggingface="https://huggingface.co/Eun"
+    />
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <section class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Education</h2>
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">Hankuk University of Foreign Studies</h3>
+          <p class="text-gray-600">Bachelor's Degree, AI & Software</p>
+          <p class="text-gray-600">Bachelor's Degree, International Economics and Law</p>
+          <p class="text-gray-500">March 2023 - February 2027 (expected)</p>
+          <p class="text-gray-600 mt-2">Current GPA: 3.5/4.5</p>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+        <div class="space-y-2">
+          <div>
+            <h3 class="font-semibold text-gray-800">Programming Languages</h3>
+            <p class="text-gray-600">Python, C, C++, Rust, Go(not so good..)</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800">Machine Learning</h3>
+            <p class="text-gray-600">PyTorch, TensorFlow, Hugging Face Transformers, MLOps</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800">Security</h3>
+            <p class="text-gray-600">Kernel Exploitation, Vulnerability Research</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800">Quantum Computing</h3>
+            <p class="text-gray-600">Qiskit, Quantum Algorithms, Quantum Information Theory</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800">DevOps</h3>
+            <p class="text-gray-600">Docker, GitHub Actions, AWS</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="bg-white rounded-lg shadow-lg p-6 mt-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Areas of Expertise</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="/ai" class="block p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Artificial Intelligence</h3>
+          <p class="text-gray-700">Deep learning, NLP and MLOps. Active contributor to Hugging Face ecosystem through Pseudo Lab and OSSCA.</p>
+        </a>
+        <a href="/security" class="block p-6 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">Security</h3>
+          <p class="text-gray-700">Kernel vulnerability research, AI-enhanced security solutions.</p>
+        </a>
+        <a href="/quantum" class="block p-6 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+          <h3 class="text-xl font-semibold text-purple-900 mb-2">Quantum Information</h3>
+          <p class="text-gray-700">QISCA member actively studying advanced quantum theory and Qiskit implementations.</p>
+        </a>
+        <a href="/devops" class="block p-6 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+          <h3 class="text-xl font-semibold text-orange-900 mb-2">DevOps</h3>
+          <p class="text-gray-700">CI/CD pipelines, and cloud-native architectures with focus on MLOps.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-lg p-6 mt-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Leadership & Activities</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-lg font-semibold">vim.kr Moderator</h3>
+          <p class="text-gray-600">Korean Vim Community</p>
+          <p class="text-gray-700 mt-1">Moderating discussions and sharing knowledge about Vim editor and productivity tools</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Optimization Study Lead</h3>
+          <p class="text-gray-600">instruct.kr</p>
+          <p class="text-gray-700 mt-1">Leading study group focused on algorithm optimization and performance engineering</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Kernel Research Group (커널연구회)</h3>
+          <p class="text-gray-600">Member since March 2025</p>
+          <p class="text-gray-700 mt-1">Presented kernel vulnerability research on July 12th</p>
+          <a href="https://maximizemaxwell.com/kernelsnitch" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 text-sm">View presentation resource →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-lg p-6 mt-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Research Interests</h2>
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Cross-Domain Innovation</h3>
+        <p class="text-gray-700">Passionate about combining different technological domains, particularly:</p>
+        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+          <li>AI-enhanced cybersecurity solutions</li>
+          <li>Quantum computing applications in cryptography</li>
+          <li>Machine learning for vulnerability detection</li>
+          <li>DevOps automation with AI/ML pipelines</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</Layout>

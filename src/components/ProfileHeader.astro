@@ -7,10 +7,11 @@ interface Props {
   linkedin?: string;
   orcid?: string;
   huggingface?: string;
+  blog?: string;
   showImage?: boolean;
 }
 
-const { name, title, email, github, linkedin, orcid, huggingface, showImage = true } = Astro.props;
+const { name, title, email, github, linkedin, orcid, huggingface, blog, showImage = true } = Astro.props;
 ---
 
 <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
@@ -48,6 +49,11 @@ const { name, title, email, github, linkedin, orcid, huggingface, showImage = tr
           <a href={huggingface} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors flex items-center gap-2">
             <img src="/images/hf-logo.png" alt="Hugging Face" class="w-5 h-5" />
             Hugging Face
+          </a>
+        )}
+        {blog && (
+          <a href={blog} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+            Blog
           </a>
         )}
       </div>
